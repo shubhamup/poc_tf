@@ -12,7 +12,7 @@ Output key info (EC2 public IP, RDS endpoint)
 
 **Terraform Project Structure**
 
-web-app-infra/
+poc_tf/
 ├── main.tf
 ├── variables.tf
 ├── outputs.tf
