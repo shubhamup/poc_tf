@@ -1,3 +1,5 @@
+Web App Infrastructure on AWS using Terraform
+
 **Infrastructure Overview**
 
 Goal: Provision:
@@ -20,6 +22,13 @@ poc_tf/
 ├── backend.tf
 └── terraform.tfvars
 
+backend.tf – Remote Backend (S3 example)
+variables.tf – Input Variables
+main.tf – Main Infrastructure Code
+user_data.sh – EC2 Configuration Script
+outputs.tf – Useful Outputs
+terraform.tfvars – Your Custom Inputs
+
 **To provisioning the infa use follow below commands.**
 
 **Initialize Terraform**
@@ -32,4 +41,9 @@ terraform apply
 **Access EC2**
 
 Visit: http://<ec2_public_ip> to verify the web server
+
+**Clean Up**
+
+terraform destroy
+
 
